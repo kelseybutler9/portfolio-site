@@ -3,3 +3,7 @@
 #D9DCD6
 #16425B
 #82A6B1*/
+
+* {
+  box-sizing: border-box;
+}
