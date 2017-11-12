@@ -6,12 +6,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="edit past trip">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="main.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
 </head>
 <body>
+  <!-- <img src="images/background-image.jpg" class="background" alt=""> -->
   <header role="banner">
+    <div class="home-image"></div>
     <nav role="navigation">
+      <div class="nav-image"></div>
         <ul>
           <li><a href="">About Me</a></li>
           <li><a href="">Projects</a></li>
@@ -21,12 +24,36 @@
   </header>
   <main role="main">
       <h1>Hi, I’m Kelsey. I’m a fullstack developer and motivated problem-solver.</h1>
+      <div class="wrap">
+        <div class="box">
+          <div class="boxInner">
+            <img src="images/chevron-down.svg" />
+            <div class="titleBox">About Me</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="boxInner">
+            <div class="titleBox">Projects</div>
+            <img src="images/chevron-down.svg" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="boxInner">
+            <img src="images/chevron-down.svg" />
+            <div class="titleBox">Contact Information</div>
+          </div>
+        </div>
+      </div>
 
-        <section>
+        <section hidden>
+          <div class="about-me">
             <h2>About me</h2>
+          </div>
+          <div class="content">
             <p>I recently graduated from the Web Development Intensive bootcamp at Thinkful. My passion for coding began in my first coding class while earning a degree in Industrial Engineering from Purdue University (Go Boilers!). As I slowly drifted away from pursuing a career in Engineering, I entered the world of Technology Consulting where I have been ever since. I am exposed to the wonders of how technology can help businesses as a Business Analyst and now Account Manager. I have experience managing, selling, and implementing but am eager to take on a role behind the scenes. I am looking forward to my future in Web Development!</p>
+          </div>
         </section>
-        <section>
+        <section hidden>
           <h2>Projects</h2>
           <div>
             <h3>Travel in Time</h3>
@@ -59,7 +86,7 @@
             <a href="https://github.com/kelseybutler9/pantry-meal-app">Link to GitHub</a>
           </div>
         </section>
-        <section>
+        <section hidden>
             <h2>Contact Information</h2>
             <p>Interested in learning more? <a href="mailto:kelseybutler.11@gmail.com">Contact me!</a></p>
             <a href="https://github.com/kelseybutler9">GitHub</a>
@@ -67,6 +94,9 @@
 
         </section>
     </main>
-    <footer role="content-info">Footer</footer>
+    <footer role="content-info"><p>Interested in learning more? <a href="mailto:kelseybutler.11@gmail.com">Contact me!</a></p></footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
 </body>
 </html>
