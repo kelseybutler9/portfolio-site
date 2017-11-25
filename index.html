@@ -11,62 +11,36 @@
     <link href='https://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <!-- <img src="images/background-image.jpg" class="background" alt=""> -->
   <header role="banner">
-    <!-- <div class="home-image"></div> -->
-    <div id="headshot">
-      <!-- <img src="image.jpg" alt> -->
-    </div>
     <div class="intro">
       <h1>Hi, I’m Kelsey. <div></div>I’m a software developer and motivated problem-solver.</h1>
     </div>
     <nav role="navigation">
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li class="line"><div></div></li>
+        <li class="line"><div></div></li>
+        <li class="line"><div></div></li>
+        <li class="line"><div></div></li>
       </ul>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#aboutme">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contactinfo">Contact Information</a></li>
+      <ul>
+          <li class="nav-header" id="home-nav"><a href="#home">Home</a></li>
+          <li class="nav-header" id="about-nav"><a href="#aboutme">About Me</a></li>
+          <li class="nav-header" id="projects-nav"><a href="#projects">Projects</a></li>
+          <li class="nav-header" id="contactnav"><a href="#contactinfo">Contact</a></li>
         </ul>
-        <!-- <div class="nav-image"></div> -->
     </nav>
   </header>
 
   <main role="main">
-      <!-- <div class="wrap">
-        <div class="box">
-          <div class="boxInner">
-            <img src="images/chevron-down.svg" />
-            <div class="titleBox">About Me</div>
-          </div>
-        </div>
-        <div class="box">
-          <div class="boxInner">
-            <div class="titleBox">Projects</div>
-            <img src="images/chevron-down.svg" />
-          </div>
-        </div>
-        <div class="box">
-          <div class="boxInner">
-            <img src="images/chevron-down.svg" />
-            <div class="titleBox">Contact Information</div>
-          </div>
-        </div>
-      </div> -->
-
-        <section id="aboutme">
-            <!-- <h2>About me</h2> -->
-            <p>I recently graduated from the Web Development Intensive bootcamp at Thinkful. My passion for coding began in my first coding class while earning a degree in Industrial Engineering from Purdue University (Go Boilers !). As I slowly drifted away from pursuing a career in Engineering, I entered the world of Technology Consulting where I have been ever since. I am exposed to the wonders of how technology can help businesses as a Business Analyst and now Account Manager. I have experience managing, selling, and implementing but am eager to take on a role behind the scenes. I am looking forward to my future in Web Development!</p>
-          <!-- <div class="close">Close</div> -->
+        <section id="home">
+            <img src="images/personal-picture.jpg" class="headshot" alt="">
+        </section>
+        <section id="aboutme" hidden>
+            <p>I recently graduated from the Web Development Intensive bootcamp at Thinkful. My passion for coding began in my first coding class while earning a degree in Industrial Engineering from Purdue University (Go Boilers !). As I slowly drifted away from pursuing a career in Engineering, I entered the world of Technology Consulting where I have been ever since. I am exposed to the wonders of how technology can help businesses as a Business Analyst and now Account Manager. I have experience managing, selling, and implementing software but am eager to take on a role behind the scenes. I am looking forward to my future in Web Development!</p>
         </section>
 
         <section id="projects" hidden>
-          <h2>Projects</h2>
+          <!-- <h2>Projects</h2> -->
           <div class="project">
             <h3>Travel in Time</h3>
             <p>Travel in Time allows users to create, update, delete, and view personal trips.</p>
@@ -87,7 +61,6 @@
           <div class="project" hidden>
             <h3>Pantry Meal</h3>
             <p>Pantry Meal allows users to enter items in their pantry and view recipes including these items. <p>
-
             <a href="https://kelseybutler9.github.io/pantry-meal-app/">Link to App</a>
             <a href="https://github.com/kelseybutler9/pantry-meal-app">Link to GitHub</a>
             <ul>
@@ -98,57 +71,14 @@
                 <li>AJAX</li>
               </ul>
           </div>
-            <div class="close">Close</div>
         </section>
         <section id="contactinfo" hidden>
-            <h2>Contact Information</h2>
+            <!-- <h2>Contact Information</h2> -->
             <p>Interested in learning more? <a href="mailto:kelseybutler.11@gmail.com">Contact me!</a></p>
             <a href="https://github.com/kelseybutler9">GitHub</a>
             <a href="https://www.linkedin.com/in/kelsey-butler-5811045a/">LinkedIn</a>
-            <div class="close">Close</div>
         </section>
-
-        <!-- <section hidden>
-          <h2>Projects</h2>
-          <div>
-            <h3>Travel in Time</h3>
-            <p>Travel in Time allows users to create, update, delete, and view personal trips.</p>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-              <li>AJAX</li>
-              <li>Node.js</li>
-              <li>MongoDb</li>
-              <li>Mocha</li>
-              <li>Chai</li>
-            </ul>
-            <a href="www.google.com">Link to live app</a>
-            <a href="https://github.com/kelseybutler9/travel-app">Link to Github</a>
-          </div>
-          <div>
-            <h3>Pantry Meal</h3>
-            <p>Pantry Meal allows users to enter items in their pantry and view recipes including these items. <p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>jQuery</li>
-                <li>AJAX</li>
-              </ul>
-            <a href="https://kelseybutler9.github.io/pantry-meal-app/">Link to App</a>
-            <a href="https://github.com/kelseybutler9/pantry-meal-app">Link to GitHub</a>
-          </div>
-        </section>
-        <section hidden>
-            <h2>Contact Information</h2>
-            <p>Interested in learning more? <a href="mailto:kelseybutler.11@gmail.com">Contact me!</a></p>
-            <a href="https://github.com/kelseybutler9">GitHub</a>
-            <a href="https://www.linkedin.com/in/kelsey-butler-5811045a/">LinkedIn</a>
-        </section> -->
     </main>
-    <!-- <footer role="content-info"><p>Interested in learning more? <a href="mailto:kelseybutler.11@gmail.com">Contact me!</a></p></footer> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
 
