@@ -23,21 +23,6 @@ body {
     background-attachment: fixed;
 }
 
-#home {
-  display: flex;
-  align-items: center;
-  background: none;
-  border: none;
-}
-
-.headshot {
-  margin: auto;
-  margin-top: 60px;
-  border: 15px solid;
-  height: 350px;
-  width: 250px;
-}
-
 ul {
   list-style-type: none;
   display: flex;
@@ -64,14 +49,17 @@ ul {
 
 .line {
   border: none;
-  margin: 0px;
-  padding: 0px;
 }
 
-.line div {
+li {
   width: 50%;
+  margin: 0;
+  padding: 0;
   height: 100px;
-  border-right: solid .25px;
+}
+
+.line {
+  border-right: solid 2px;
 }
 
 .nav-header:hover, .selected {
@@ -102,6 +90,7 @@ h1 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 section {
   width: 70%;
   margin: auto;
@@ -113,7 +102,70 @@ section {
   margin-bottom: 20px;
 }
 
+div {
+  margin: auto;
+}
 
+.headshot {
+  margin: auto;
+  border: 15px solid #2f6690;
+  height: 350px;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.tools {
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  width: 50%;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tools li {
+  flex: 1 1 25%;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 5px;
+  text-decoration: bold;
+  font-size: 1.25em;
+  margin: 5px;
+}
+
+h3 {
+  text-decoration: bold underline;
+  font-size: 2em;
+}
+
+h3, p, a {
+  margin: auto;
+  padding: 10px;
+}
+
+.project {
+  border: 2px solid;
+  width: 90%;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.links {
+  border: none;
+  margin: auto;
+}
+
+.links a {
+  font-size: 1.25em;
+  text-align: center;
+}
 /*p {
   display: block;
 }*/
@@ -245,10 +297,4 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
       width: 25%;
       padding-bottom: 25%;
    }
-}
-
-footer p {
-  display: block;
-  text-align: center;
-  padding: 10px;
 }*/

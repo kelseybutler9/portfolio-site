@@ -1,9 +1,12 @@
 $(`li`).click(function() {
-  let sectionOptions = ['#home', '#aboutme', '#projects', '#contactinfo'];
+  let sectionOptions = ['aboutme', 'projects', 'contactinfo'];
   let sectionName = $(this).find('a').attr('href');
+
   sectionOptions.forEach(item => {
-    $(`${item}`).prop("hidden", true);
+    $(`#${item}`).prop("hidden", true);
+    $(`#${item}-nav`).removeClass('selected');
   });
 
   $(`${sectionName}`).prop("hidden", false);
+  $(`${sectionName}-nav`).addClass('selected');
 });
