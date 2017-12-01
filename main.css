@@ -44,6 +44,15 @@ ul {
   border: none;
 }
 
+.picture {
+  width: 100%;
+}
+
+img {
+  width: 80%;
+  border: 5px solid;
+}
+
 li {
   width: 50%;
   margin: 0;
