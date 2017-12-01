@@ -48,8 +48,9 @@ ul {
   width: 100%;
 }
 
-img {
+.screenshot {
   width: 80%;
+  height: auto;
   border: 5px solid;
 }
 
