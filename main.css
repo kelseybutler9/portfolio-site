@@ -1,20 +1,19 @@
 * {
   box-sizing: border-box;
-  /*color: #16425B;*/
   color: #0d2736;
   font-family: 'Wire One', sans-serif;
 }
 
 html, body {
-   height: 100%;
+  height: 100%;
 }
 
 body {
-    background-image: url('images/background-image.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: fixed;
+  background-image: url('images/background-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
 }
 
 ul {
@@ -207,16 +206,14 @@ h3, p, a {
 }
 
 @media only screen and (max-width : 480px) {
-   /* Smartphone view: 1 tile */
+  h2, h3, .nav-header a {
+    font-size: 1.5em;
+  }
 
-   h2, h3, .nav-header a {
-     font-size: 1.5em;
-   }
-
-   .nav-header, .line {
-     padding: 2px;
-     border: solid .25px;
-     flex-grow: 1;
+  .nav-header, .line {
+    padding: 2px;
+    border: solid .25px;
+    flex-grow: 1;
    }
 
    .nav-header:hover, .selected {
@@ -316,7 +313,6 @@ h3, p, a {
      border-radius: 10px;
      margin-top: 2px;
      margin-bottom: 5px;
-
    }
 
    .technologies {
@@ -328,117 +324,115 @@ h3, p, a {
      margin-bottom: 10px;
      text-decoration: bold;
    }
-
 }
 
 @media only screen and (max-width : 650px) and (min-width : 481px) {
-   /* Tablet view: 2 tiles */
-   h2, h3, .nav-header a {
-     font-size: 1.75em;
-   }
+     h2, h3, .nav-header a {
+       font-size: 1.75em;
+     }
 
-   .nav-header, .line {
-     padding: 2px;
-     border: solid .25px;
-     flex-grow: 1;
-   }
+     .nav-header, .line {
+       padding: 2px;
+       border: solid .25px;
+       flex-grow: 1;
+     }
 
-   .nav-header:hover, .selected {
-     border-bottom: rgba(0, 0, 0, 0.2);
-     margin: 0;
-   }
+     .nav-header:hover, .selected {
+       border-bottom: rgba(0, 0, 0, 0.2);
+       margin: 0;
+     }
 
-   li {
-     width: 50%;
-     height: 40px;
-   }
+     li {
+       width: 50%;
+       height: 40px;
+     }
 
-   .line {
-     border-right: solid .5px;
-   }
+     .line {
+       border-right: solid .5px;
+     }
 
-   a {
-     font-size: 1.2em;
-   }
+     a {
+       font-size: 1.2em;
+     }
 
-   h1 {
-     margin: 20px;
-     margin-bottom: 0px;
-     border-top: .5px solid #2F6690;
-     border-bottom: .5px solid #2F6690;
-     font-size: 2em;
-     padding-top: 10px;
-     padding-bottom: 10px;
-   }
+     h1 {
+       margin: 20px;
+       margin-bottom: 0px;
+       border-top: .5px solid #2F6690;
+       border-bottom: .5px solid #2F6690;
+       font-size: 2em;
+       padding-top: 10px;
+       padding-bottom: 10px;
+     }
 
-   section {
-     padding: 2px;
-     font-size: 1.5em;
-     border: solid .5px;
-     margin-bottom: 100px;
-     border-top: none;
-   }
+     section {
+       padding: 2px;
+       font-size: 1.5em;
+       border: solid .5px;
+       margin-bottom: 100px;
+       border-top: none;
+     }
 
-   .picture {
-     width: 100%;
-   }
+     .picture {
+       width: 100%;
+     }
 
-   .headshot {
-     border: 5px solid #2f6690;
-     width: 50%;
-     height: 60%;
-     margin-top: 10px;
-     margin-bottom: 10px;
-   }
+     .headshot {
+       border: 5px solid #2f6690;
+       width: 50%;
+       height: 60%;
+       margin-top: 10px;
+       margin-bottom: 10px;
+     }
 
-   .tools {
-      width: 80%;
-   }
+     .tools {
+        width: 80%;
+     }
 
-   .tools li {
-     border: .5px solid;
-     border-radius: 10px;
-     padding: 5px;
-     font-size: 1em;
-     margin: 2px;
-   }
+     .tools li {
+       border: .5px solid;
+       border-radius: 10px;
+       padding: 5px;
+       font-size: 1em;
+       margin: 2px;
+     }
 
-   h3, p, a {
-     padding: 5px;
-   }
+     h3, p, a {
+       padding: 5px;
+     }
 
-   .project {
-     border: 2px solid;
-     width: 90%;
-     padding: 5px;
-     margin-bottom: 10px;
-     margin-top: 10px;
-   }
+     .project {
+       border: 2px solid;
+       width: 90%;
+       padding: 5px;
+       margin-bottom: 10px;
+       margin-top: 10px;
+     }
 
-   .links a {
-     font-size: 1.25em;
-   }
+     .links a {
+       font-size: 1.25em;
+     }
 
-   #contactinfo p, #contactinfo a {
-     font-size: 1.25em;
-   }
+     #contactinfo p, #contactinfo a {
+       font-size: 1.25em;
+     }
 
-   #contactinfo a {
-     font-size: 1em;
-     padding: 2px;
-     border: solid .5px;
-     border-radius: 10px;
-     margin-top: 2px;
-     margin-bottom: 5px;
-     text-decoration: bold;
-   }
+     #contactinfo a {
+       font-size: 1em;
+       padding: 2px;
+       border: solid .5px;
+       border-radius: 10px;
+       margin-top: 2px;
+       margin-bottom: 5px;
+       text-decoration: bold;
+     }
 
-   .technologies {
-     border-bottom: .5px dashed;
-     border-top: .5px dashed;
-     font-size: 1.25em;
-     width: 80%;
-     margin-top: 10px;
-     margin-bottom: 10px;
-   }
+     .technologies {
+       border-bottom: .5px dashed;
+       border-top: .5px dashed;
+       font-size: 1.25em;
+       width: 80%;
+       margin-top: 10px;
+       margin-bottom: 10px;
+     }
 }
