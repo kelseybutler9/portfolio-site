@@ -1,4 +1,4 @@
-$(`li`).click(function() {
+$(`.nav-header`).click(function() {
   let sectionOptions = ['aboutme', 'projects', 'contactinfo'];
   let sectionName = $(this).find('a').attr('href');
 

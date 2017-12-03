@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  color: #16425B;
+  /*color: #16425B;*/
+  color: #0d2736;
   font-family: 'Wire One', sans-serif;
 }
 
@@ -106,7 +107,7 @@ section {
   background-color: rgba(0, 0, 0, 0.2);
   border: solid 1px;
   border-top: rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 div {
@@ -126,7 +127,7 @@ div {
   list-style: none;
   display: flex;
   flex-flow: row;
-  width: 50%;
+  width: 70%;
   flex-wrap: wrap;
   align-content: center;
   margin: auto;
@@ -200,7 +201,7 @@ h3, p, a {
   border-bottom: .5px dashed;
   border-top: .5px dashed;
   font-size: 1.2em;
-  width: 250px;
+  width: 70%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -209,13 +210,18 @@ h3, p, a {
    /* Smartphone view: 1 tile */
 
    h2, h3, .nav-header a {
-     font-size: 1em;
+     font-size: 1.5em;
    }
 
    .nav-header, .line {
      padding: 2px;
      border: solid .25px;
      flex-grow: 1;
+   }
+
+   .nav-header:hover, .selected {
+     border-bottom: rgba(0, 0, 0, 0.2);
+     margin: 0;
    }
 
    .line {
@@ -242,7 +248,7 @@ h3, p, a {
      margin-bottom: 0px;
      border-top: .5px solid #2F6690;
      border-bottom: .5px solid #2F6690;
-     font-size: 1.5em;
+     font-size: 2em;
      padding-top: 10px;
      padding-bottom: 10px;
    }
@@ -251,7 +257,8 @@ h3, p, a {
      padding: 2px;
      font-size: 1.3em;
      border: solid .5px;
-     margin-bottom: 5px;
+     border-top: none;
+     margin-bottom: 100px;
    }
 
    .picture {
@@ -259,19 +266,24 @@ h3, p, a {
    }
 
    .headshot {
-     border: 2px solid #2f6690;
+     border: 4px solid #2f6690;
      width: 50%;
      height: 60%;
      margin-top: 10px;
      margin-bottom: 10px;
    }
 
+   .tools {
+     width: 90%;
+   }
+
    .tools li {
      border: .5px solid;
      border-radius: 10px;
      padding: 5px;
-     font-size: .75em;
+     font-size: 1em;
      margin: 2px;
+     text-decoration: bold;
    }
 
    h3, p, a {
@@ -287,28 +299,34 @@ h3, p, a {
    }
 
    .links a {
-     font-size: .75em;
+     font-size: 1em;
+     text-decoration: bold;
    }
 
    #contactinfo p, #contactinfo a {
      font-size: 1em;
+     padding: 5px;
    }
 
    #contactinfo a {
-     font-size: .75em;
+     width: 50%;
+     font-size: 1em;
+     text-decoration: bold;
      border: solid .5px;
      border-radius: 10px;
      margin-top: 2px;
      margin-bottom: 5px;
+
    }
 
    .technologies {
      border-bottom: .5px dashed;
      border-top: .5px dashed;
-     font-size: .8em;
-     width: 50px;
+     font-size: 1em;
+     width: 80%;
      margin-top: 10px;
      margin-bottom: 10px;
+     text-decoration: bold;
    }
 
 }
@@ -316,13 +334,18 @@ h3, p, a {
 @media only screen and (max-width : 650px) and (min-width : 481px) {
    /* Tablet view: 2 tiles */
    h2, h3, .nav-header a {
-     font-size: 1.5em;
+     font-size: 1.75em;
    }
 
    .nav-header, .line {
      padding: 2px;
      border: solid .25px;
      flex-grow: 1;
+   }
+
+   .nav-header:hover, .selected {
+     border-bottom: rgba(0, 0, 0, 0.2);
+     margin: 0;
    }
 
    li {
@@ -343,16 +366,17 @@ h3, p, a {
      margin-bottom: 0px;
      border-top: .5px solid #2F6690;
      border-bottom: .5px solid #2F6690;
-     font-size: 1.5em;
+     font-size: 2em;
      padding-top: 10px;
      padding-bottom: 10px;
    }
 
    section {
      padding: 2px;
-     font-size: 1.3em;
+     font-size: 1.5em;
      border: solid .5px;
-     margin-bottom: 5px;
+     margin-bottom: 100px;
+     border-top: none;
    }
 
    .picture {
@@ -360,18 +384,22 @@ h3, p, a {
    }
 
    .headshot {
-     border: 2px solid #2f6690;
+     border: 5px solid #2f6690;
      width: 50%;
      height: 60%;
      margin-top: 10px;
      margin-bottom: 10px;
    }
 
+   .tools {
+      width: 80%;
+   }
+
    .tools li {
      border: .5px solid;
      border-radius: 10px;
      padding: 5px;
-     font-size: .75em;
+     font-size: 1em;
      margin: 2px;
    }
 
@@ -388,26 +416,28 @@ h3, p, a {
    }
 
    .links a {
-     font-size: .75em;
+     font-size: 1.25em;
    }
 
    #contactinfo p, #contactinfo a {
-     font-size: 1em;
+     font-size: 1.25em;
    }
 
    #contactinfo a {
-     font-size: .75em;
+     font-size: 1em;
+     padding: 2px;
      border: solid .5px;
      border-radius: 10px;
      margin-top: 2px;
      margin-bottom: 5px;
+     text-decoration: bold;
    }
 
    .technologies {
      border-bottom: .5px dashed;
      border-top: .5px dashed;
-     font-size: .8em;
-     width: 50px;
+     font-size: 1.25em;
+     width: 80%;
      margin-top: 10px;
      margin-bottom: 10px;
    }
